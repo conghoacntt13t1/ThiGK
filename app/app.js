@@ -25,6 +25,11 @@ app.config(function ($routeProvider) {
                 controller: 'ChatController',
                 templateUrl: 'app/views/chat.html'
             })
+        .when('/todo',
+            {
+                controller:'todoController',
+                templateUrl: 'app/views/todo.html'
+            })
         .otherwise({ redirectTo: '/customers' });
 });
 

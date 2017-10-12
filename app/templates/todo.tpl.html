@@ -1,0 +1,10 @@
+<h1>{{title}}</h1>
+
+<form ng-submit="addTodo()">
+    <input type="text" placeholder="Thêm 1 todo mới vào đây ..." ng-model="name">
+    <input type="submit" value="Thêm">
+</form>
+
+<div ng-repeat="todo in list">
+    <input type="checkbox" ng-model="todo.completed">{{todo.name}}
+</div>
